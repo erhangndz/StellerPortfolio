@@ -126,6 +126,7 @@
     <Compile Include="Controllers\FeatureController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Global.asax.cs">
@@ -526,6 +527,8 @@
     <Content Include="Views\Default\DefaultContactInfoPartial.cshtml" />
     <Content Include="Views\UILayout\UILayoutFooterPartial.cshtml" />
     <Content Include="Views\Default\UILayoutFooterPartial.cshtml" />
+    <Content Include="Views\Message\Index.cshtml" />
+    <Content Include="Views\Message\MessageDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

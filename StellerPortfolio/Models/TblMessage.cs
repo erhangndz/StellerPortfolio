@@ -18,5 +18,6 @@ namespace StellerPortfolio.Models
         public string Email { get; set; }
         public string NameSurname { get; set; }
         public string MessageContent { get; set; }
+        public Nullable<bool> IsRead { get; set; }
     }
 }

@@ -40,6 +40,7 @@ namespace StellerPortfolio.Controllers
         [HttpPost]
         public ActionResult SendMessage(TblMessage message)
         {
+            message.IsRead = false;
             db.TblMessage.Add(message);
             db.SaveChanges();
             return RedirectToAction("Index");
