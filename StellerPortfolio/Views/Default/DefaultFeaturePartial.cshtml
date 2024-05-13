@@ -13,12 +13,7 @@
                 <a class="btn btn-dark rounded" href="@item.CvDownloadUrl" target="_blank">CV İndir</a>
             </div>
 
-            <div class="socials mt-4">
-                <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
-                <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
-                <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
-            </div>
+           @Html.Action("DefaultSocialMediaPartial")
         </div>
         <div class="img-holder">
             <img src="@item.ImageUrl" alt="">

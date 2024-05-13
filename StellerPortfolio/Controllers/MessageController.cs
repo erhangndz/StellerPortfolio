@@ -23,5 +23,13 @@ namespace StellerPortfolio.Controllers
             db.SaveChanges();
             return View(message);
         }
+
+        public ActionResult ReadMessages()
+        {
+            var values  = db.TblMessage.Where(x=>x.IsRead==true).ToList();
+            return View(values);
+        }
+
+
     }
 }

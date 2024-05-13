@@ -1,0 +1,21 @@
+﻿@model StellerPortfolio.Models.TblSocialMedia 
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Sosyal Medya Güncelleme Sayfası</h3>
+
+<form method="post">
+    @Html.HiddenFor(x=>x.SocialMediaId)
+    <label>Sosyal Medya Adı</label>
+    @Html.TextBoxFor(x => x.SocialMediaName, new { @class = "form-control" })
+    <br />
+    <label>Sosyal Medya Url</label>
+    @Html.TextBoxFor(x => x.Url, new { @class = "form-control" })
+    <br />
+    <label>İkon</label>
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-primary">Güncelle</button>
+</form>
